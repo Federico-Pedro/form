@@ -7,6 +7,8 @@
     /*border: solid 1px white;*/
     padding: 0;
     margin: 0;
+	overflow: hidden;
+	
 }
 
 body {
@@ -65,11 +67,68 @@ body {
 }
 
 .info-container {
-    height: 39%;
-    
-    background-color: rgb(240, 240, 240);
+    height: 40%;
+    background-color: rgb(245, 245, 245);
     padding: 30px;
-     
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.5rem;
+	font-size: 0.75rem;
+}
+
+.info-container > h2 {
+	margin: 40px 70px 20px 10px;
+}
+
+.info1 {
+	padding-top: 60px;
+}
+
+.form-container {
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0 5px 5px -2px gray;
+	height:30%;
+	padding: 20px 40px;
+}
+
+.form-container > h3 {
+	font-family: 'Times New Roman', serif;
+	margin-bottom: 20px;
+	
+}
+
+.input-one, 
+.input-two, 
+.input-three {
+	position: relative;
+	margin-bottom: 15px;
+	
+}
+
+label {
+	position: absolute;
+	font-family: 'Runa', Arial, sans-serif;
+	font-size: 12px;
+}
+
+input {
+	
+	margin-top: 15px;
+	margin-right: 30px;
+	height: 25px;
+	width: 200px;
+	border-radius: 5px;
+	border: 1px solid rgb(240, 240, 240);
+}
+
+
+input[type='password']:invalid {
+	border: 1px solid red;
+}
+
+input:hover {
+  border: 1px solid lightblue;
+}
+
+input:focus {
+	border: 1px solid lightblue;
+	background-color: lightblue;
 }
